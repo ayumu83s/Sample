@@ -21,6 +21,8 @@
             android:orientation="vertical" >
 
             <TextView
+            	android:id="@+id/atk"
+            	android:clickable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="◯" />
@@ -29,6 +31,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="×" />
+            <Button
+                android:id="@+id/atk_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ATK BUTTON" />
         </LinearLayout>
 
         <LinearLayout
