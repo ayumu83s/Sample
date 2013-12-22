@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1,2"
+        >
+        <TableRow>
+            <include layout="@layout/test"
+                android:id="@+id/group1"/>
+            <include layout="@layout/test"
+                android:id="@+id/group2"/>
+        </TableRow>
+        <TableRow>
+            <include layout="@layout/test"
+                android:id="@+id/group3"/>
+            <include layout="@layout/test"
+                android:id="@+id/group4"/>
+        </TableRow>
+        <TableRow>
+            <include layout="@layout/test"
+                android:id="@+id/group5"/>
+            <include layout="@layout/test"
+                android:id="@+id/group6"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="リセット" />
+
+        </TableLayout>
+
+</RelativeLayout>
