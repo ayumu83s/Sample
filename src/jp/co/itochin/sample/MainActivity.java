@@ -24,7 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		resetBtn.setOnClickListener(this);
 
 		// http://y-anz-m.blogspot.jp/2010/11/android-linearlayout-expandablelistview.html
-		int groupIds[] = {
+/*		int groupIds[] = {
 				R.id.group1, R.id.group2, R.id.group3,
 				R.id.group4, R.id.group5, R.id.group6
 		};
@@ -50,6 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			});
 		
 		}
+*/
 	}
 
 	@Override
