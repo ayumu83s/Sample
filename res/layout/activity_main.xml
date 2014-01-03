@@ -20,25 +20,27 @@
         <TableRow
             android:layout_height="fill_parent"
             android:layout_weight="1">
-            <include layout="@layout/test"
+            <include layout="@layout/monster_status"
                 android:id="@+id/group1"/>
-            <include layout="@layout/test"
+            <include layout="@layout/monster_status"
                 android:id="@+id/group2"/>
         </TableRow>
         <TableRow
             android:layout_height="fill_parent"
             android:layout_weight="1">
-            <include layout="@layout/test"
+            <include layout="@layout/monster_status"
                 android:id="@+id/group3"/>
-            <include layout="@layout/test"
+            <include layout="@layout/monster_status"
                 android:id="@+id/group4"/>
         </TableRow>
         <TableRow
             android:layout_height="fill_parent"
             android:layout_weight="1">
-            <include layout="@layout/test"
+            
+            <include layout="@layout/monster_status"
                 android:id="@+id/group5"/>
-            <include layout="@layout/test"
+            
+            <include layout="@layout/monster_status"
                 android:id="@+id/group6"/>
         </TableRow>
         </TableLayout>
