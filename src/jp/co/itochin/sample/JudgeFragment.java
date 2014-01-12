@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 public class JudgeFragment extends Fragment {  
     @Override  
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {  
-        // ‘æ‚Rˆø”‚Ìboolean‚Í"container"‚Éreturn‚·‚éView‚ğ’Ç‰Á‚·‚é‚©‚Ç‚¤‚©  
-        //true‚É‚·‚é‚ÆÅI“I‚Èlayout‚ÉÄ“xA“¯‚¶View group‚ª•\¦‚³‚ê‚Ä‚µ‚Ü‚¤‚Ì‚Åfalse‚ÅOK‚ç‚µ‚¢  
+        // ç¬¬ï¼“å¼•æ•°ã®booleanã¯"container"ã«returnã™ã‚‹Viewã‚’è¿½åŠ ã™ã‚‹ã‹ã©ã†ã‹  
+        //trueã«ã™ã‚‹ã¨æœ€çµ‚çš„ãªlayoutã«å†åº¦ã€åŒã˜View groupãŒè¡¨ç¤ºã•ã‚Œã¦ã—ã¾ã†ã®ã§falseã§OKã‚‰ã—ã„  
         return inflater.inflate(R.layout.activity_main, container, false);  
     }  
 }  

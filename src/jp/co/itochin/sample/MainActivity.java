@@ -4,16 +4,10 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.util.Log;
-import android.widget.Button;
-import android.view.View.OnClickListener;
-import android.widget.LinearLayout;
 import android.widget.Toast;
-import android.widget.TextView;
 
 @SuppressLint("NewApi")
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -22,50 +16,20 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		Log.d("OnCreate", "kita!");
-		//Button resetBtn = (Button)findViewById(R.id.reset);
-		//resetBtn.setOnClickListener(this);
 
 		// Set up the action bar.  
         final ActionBar actionBar = getActionBar();  
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);  
   
         actionBar.addTab(actionBar.newTab()   
-                .setText("ƒWƒƒƒbƒW‚­‚ñƒƒ‚")   
+                .setText("ã‚¸ãƒ£ãƒƒã‚¸ãã‚“ãƒ¡ãƒ¢")   
                 .setTabListener(new TabListener<JudgeFragment>(   
                         this, "tag1", JudgeFragment.class)));   
         actionBar.addTab(actionBar.newTab()   
-                .setText("Šƒ|ƒPƒ‚ƒ“ƒŠƒXƒg")   
+                .setText("æ‰€æŒãƒã‚±ãƒ¢ãƒ³ãƒªã‚¹ãƒˆ")   
                 .setTabListener(new TabListener<HaveListFragment>(   
                         this, "tag2", HaveListFragment.class)));
 		
-		// http://y-anz-m.blogspot.jp/2010/11/android-linearlayout-expandablelistview.html
-//		int groupIds[] = {
-//				R.id.group1, R.id.group2, R.id.group3,
-//				R.id.group4, R.id.group5, R.id.group6
-//		};
-//		for (int i = 0; i < groupIds.length; i++) {
-//			LinearLayout ll = (LinearLayout)findViewById(groupIds[i]);
-//			Button atk_btn = (Button)ll.findViewById(R.id.atk_btn);
-//			atk_btn.setOnClickListener(new View.OnClickListener() {
-//				
-//				@Override
-//				public void onClick(View v) {
-//					Log.d("onClick", "atk");
-//					
-//				}
-//			});
-//			TextView atk = (TextView)ll.findViewById(R.id.atk);
-//			atk.setOnClickListener(new View.OnClickListener() {
-//				
-//				@Override
-//				public void onClick(View v) {
-//					Log.d("onClick", "atk view");
-//					
-//				}
-//			});
-		
-		//}
 	}
 
 	@Override
